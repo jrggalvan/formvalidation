@@ -1,0 +1,56 @@
+.fontstyle
+{
+    font-family: 'Courier New';
+    font-weight: bold;
+    text-align: justify;
+}
+
+.savebutton
+{
+        height:20px;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin: -20px -50px; 
+        position:relative;
+        top:50%; 
+        left:27%;
+}
+
+.cancelbutton
+{
+        height:20px;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin: -20px -50px; 
+        position:relative;
+        top:50%; 
+        left:37%;
+}
+
+.EventType{
+
+    margin-left: 370px;
+    margin-top: 120px;
+
+}
+
+.eventtype
+{
+    margin-left: 70px;
+}
+
+.eventtitle
+{
+    width: 500px;
+    margin-left: 60px;
+}
+
+.datefrom
+{
+    margin-left: 60px;
+}
+
+.postingdate
+{
+    margin-left: 51px;
+}

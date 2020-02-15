@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Create a New Event</title>
+    <script src="formval.js"></script>
+    <link rel="stylesheet" href="formval.css">
+</head>
+
+
+<body>
+    <div class="fontstyle">
+        <form>
+            <div class="Event">
+
+                <div class="EventType">
+
+                    <label for="Event-type">Event Type:</label>
+                    <select id="eventypeselected" class="eventtype" required>
+                        <option value="0" disabled selected>Choose one</option>
+                        <option value="Seminar">Seminar</option>
+                        <option value="Birthday">Birthday</option>
+                        <option value="Debut">Debut</option>
+                        <option value="Meeting">Meeting</option>
+                        <option value="Anniversary">Anniversary</option>
+                        <option value="Reunion">Reunion</option>
+                        <option value="Conference">Conference</option>
+                        <option value="Concert">Concert</option>
+                        <option value="Product Launch">Product Launch</option>
+                        <option value="Funeral">Funeral</option>
+                    </select>
+                    <br><br>
+                    <div class="EventTitle">
+                        <label for="Event-Title">Event Title:</label>
+                        <input type="text" id="eventtilegiven" class="eventtitle" required>
+                    </div>
+                    <br>
+                    <div class="EventDate">
+                        <label for="Event-Date">Event Dates:</label>
+                        <input type="date" id="datefrom" class="datefrom" required>
+                        <label for="event-date">to</label>
+                        <input type="date" id="dateto" required>
+                    </div>
+                    <br>
+                    <div class="PostingDate">
+                        <label for="Posting-Date">Posting Date:</label>
+                        <input type="date" id="postingdateselected" class="postingdate" required>
+                    </div>
+                    <br>
+
+                    <div class="Checkboxes">
+                        <input type="checkbox" name="cbox1" id="box1">
+                        <label for="checkbox1"> Is Registration Required? </label><br><br>
+                        <input type="checkbox" name="cbox2" id="box2">
+                        <label for="checkbox2"> Is this event associated with any Family Programs? </label><br><br>
+                        <input type="checkbox" name="cbox3" id="box3">
+                        <label for="checkbox3"> Upon Registration Completion, Are Users to Receive an Auto Generated
+                            Email? </label><br><br>
+                        <input type="checkbox" name="cbox4" id="box4">
+                        <label for="checkbox3"> Is There a Point of Contact? </label><br><br>
+                        <input type="checkbox" name="cbox5" id="box5">
+                        <label for="checkbox4"> Is There a Hosting Command Point of Contact? </label><br><br>
+                    </div>
+
+                    <br>
+                    <button onclick="save()" type="submit" class="savebutton">Save</button>
+                    <button onclick="cancel()" type="reset" class="cancelbutton">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
